@@ -1,5 +1,39 @@
-<div class="grid h-screen place-items-center">
-  <div class="font-bold text-3xl">
-    Fyle Internship Challenge
+
+<div>
+  <h1>Search here</h1>
+  <div>
+    <input type="text" id="search-bar" placeholder="Enter name to search" [(ngModel)]="searchTerm">
+    <button id="search-btn" (click)="search()">Search</button>
   </div>
+  <app-search></app-search>
+</div>
+
+<div class="user-profile-container">
+  <div class="user-info">
+    <div class="user-image">
+      <img [src]="userData.avatar_url" alt="User Avatar" />
+    </div>
+    <div class="user-details">
+      <h2>{{ userData.name }}</h2>
+      <p>{{ userData.bio }}</p>
+    </div>
+  </div>
+  <div class="repo-list">
+    <h3>Repositories:</h3>
+    <ul class="repo-items">
+      <li *ngFor="let repo of repos" class="repo-item">
+        <div>
+          <h1>{{ repo.name }}</h1>
+          <p>{{ repo.description }}</p>
+          <p id="lang">{{ repo.language }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <app-pagination
+  [currentPage]="currentPage"
+  [itemsPerPage]="itemsPerPage"
+  (pageChange)="onPageChange($event)"
+></app-pagination>
 </div>

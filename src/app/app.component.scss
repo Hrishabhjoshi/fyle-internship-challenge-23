@@ -1,0 +1,68 @@
+/* user-profile.component.css */
+
+.user-profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-image img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+  }
+  
+  .user-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .repo-list li {
+    border: 1px solid black; /* Add a black border */
+    padding: 8px; /* Add padding as needed */
+    margin: 4px; /* Add margin as needed */
+    color: black; /* Set text color to black */
+    border-radius: 6px; /* Add border radius for rounded corners */
+  }
+
+  /* user-profile.component.css */
+
+
+.repo-list li {
+  width: 50%; /* Set the width to 50% to have two items per row */
+  box-sizing: border-box; /* Include padding and border in the width */
+  padding: 8px; /* Add padding as needed */
+}
+.repo-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repo-item {
+  width: calc(50% - 16px); /* Adjust width and margin as needed, considering box-sizing */
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid black; /* Add a border for better visibility */
+  border-radius: 8px; /* Add border radius for rounded corners */
+}
+#lang {
+  background-color: blue;
+  display: inline-block;
+  padding: 5px; /* Add padding as needed */
+  color: white; /* Set text color to white for better visibility */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+

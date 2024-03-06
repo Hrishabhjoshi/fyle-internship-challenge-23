@@ -1,0 +1,25 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+  }
+  
+  #search-bar {
+    display: inline-block;
+    padding: 8px;
+    border: 3px black;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  #search-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
